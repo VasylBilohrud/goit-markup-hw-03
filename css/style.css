@@ -4,6 +4,12 @@
   --description-subtitle-color: #757575;
   --logo-color: #000000;
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -19,8 +25,26 @@ body {
 .adress {
   font-style: normal;
 }
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+}
 /*==Header===*/
+.header {
+  width: 1600px;
+  height: 80px;
+  padding: 25px 0;
+}
+.header .container {
+  display: flex;
+}
 .logo {
+  margin-right: 93px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -38,6 +62,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -51,6 +85,12 @@ body {
 }
 .navigation-list-link:active {
   color: var(--accent-color);
+}
+.header .adress {
+  margin-left: auto;
+}
+.header-tel-link {
+  margin-left: 50px;
 }
 .header-mail-link,
 .header-tel-link {
@@ -72,26 +112,50 @@ body {
 }
 /*== End Header===*/
 /*== HERO===*/
+.hero {
+  width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+  text-align: center;
+  margin-bottom: 94px;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-title {
+  width: 700px;
+  height: 120px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #ffffff;*/
+  color: #ffffff;
 }
 .modal-btn {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  /*color: #FFFFFF;*/
+  color: #ffffff;
 }
+
 .hero-section-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
@@ -99,7 +163,24 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+/*== End HERO===*/
+
+/*== Advantages===*/
+.advantages-section {
+  width: 1600px;
+  margin-bottom: 94px;
+}
+.advantages-section .container {
+  display: flex;
+}
+.advantages-list {
+  display: flex;
+}
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .advantages-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -114,7 +195,45 @@ body {
   letter-spacing: 0.03em;
   color: var(--description-subtitle-color);
 }
+/*== End Advantages===*/
+
+/*== What are we doing===*/
+.doing-section {
+  width: 1600px;
+  margin-bottom: 94px;
+}
+.doing-section .container {
+  display: flex;
+}
+.doing-list {
+  display: flex;
+}
+.doing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+/*== End What are we doing===*/
+/*== Our team ===*/
+.team-section {
+  width: 1600px;
+  margin-bottom: 94px;
+}
+.team-section .container {
+  display: flex;
+}
+.team-list {
+  display: flex;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list-content {
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 59px;
+  padding-bottom: 30px;
+}
 .team-title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
@@ -128,6 +247,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--description-subtitle-color);
 }
+/*== End Our team ===*/
+/*== Portfolio ===*/
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
@@ -155,15 +276,27 @@ body {
   letter-spacing: 0.03em;
   color: var(--description-subtitle-color);
 }
-/*== End HERO===*/
+/*== End Portfolio ===*/
+
 /*== Footer===*/
+.footer {
+  width: 1600px;
+  height: 252px;
+  background-color: #2f303a;
+}
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+}
 .footer-adress-link {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   list-style: none;
-  /*color: #FFFFFF;*/
+  color: #ffffff;
 }
 .footer-mail-link,
 .footer-tel-link {
@@ -171,6 +304,6 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  /*color: rgba(255, 255, 255, 0.6);*/
+  color: rgba(255, 255, 255, 0.6);
 }
 /*== End Footer===*/
