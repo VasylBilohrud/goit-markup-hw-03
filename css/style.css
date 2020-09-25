@@ -257,6 +257,11 @@ img {
 }
 /*== End Our team ===*/
 /*== Portfolio ===*/
+.portfolio-hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--backgound-color);
+}
 .portfolio-title-list {
   display: flex;
   justify-content: center;
