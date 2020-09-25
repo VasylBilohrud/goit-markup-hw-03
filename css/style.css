@@ -343,6 +343,11 @@ img {
   justify-content: stretch;
   align-items: flex-start;
 }
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .footer-adress-link {
   font-weight: normal;
   font-size: 14px;
