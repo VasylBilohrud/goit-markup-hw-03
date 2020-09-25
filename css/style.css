@@ -31,7 +31,7 @@ img {
   display: block;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   align-items: center;
@@ -342,6 +342,8 @@ img {
   flex-direction: column;
   justify-content: stretch;
   align-items: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .logo {
   display: block;
