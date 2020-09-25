@@ -38,7 +38,7 @@ img {
 }
 /*==Header===*/
 .header {
-  width: 1600px;
+  /*width: 1600px;*/
   height: 80px;
   padding: 25px 0;
 }
@@ -115,13 +115,14 @@ img {
 /*== End Header===*/
 /*== HERO===*/
 .hero {
-  width: 1600px;
-  height: 600px;
+  /* width: 1600px; */
+  /* height: 600px; */
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 94px;
 }
 .hero .container {
   display: flex;
@@ -169,8 +170,11 @@ img {
 
 /*== Advantages===*/
 .advantages-section {
-  width: 1600px;
-  margin-bottom: 94px;
+  /* width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .advantages-section .container {
   display: flex;
@@ -201,8 +205,11 @@ img {
 
 /*== What are we doing===*/
 .doing-section {
-  width: 1600px;
-  margin-bottom: 94px;
+  /* width: 1600px; */
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .doing-section .container {
   display: flex;
@@ -216,8 +223,11 @@ img {
 /*== End What are we doing===*/
 /*== Our team ===*/
 .team-section {
-  width: 1600px;
-  margin-bottom: 94px;
+  /* width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-section .container {
   display: flex;
@@ -338,7 +348,9 @@ img {
 
 /*== Footer===*/
 .footer {
-  width: 1600px;
+  /* width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
   height: 252px;
   background-color: #2f303a;
 }
