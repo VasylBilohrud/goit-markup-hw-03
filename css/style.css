@@ -301,6 +301,12 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.portfolio-hero-list-content {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .portfolio-hero-list-item {
   width: 370px;
   height: 404px;
