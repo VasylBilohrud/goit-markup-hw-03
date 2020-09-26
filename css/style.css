@@ -41,6 +41,10 @@ img {
   /*width: 1600px;*/
   height: 80px;
   padding: 25px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+  background-color: var(--backgound-color);
 }
 .header .container {
   display: flex;
@@ -208,7 +212,6 @@ img {
   /* width: 1600px; */
   margin-right: auto;
   margin-left: auto;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 .doing-section .container {
@@ -275,7 +278,7 @@ img {
 .portfolio-title-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 .portfolio-hero .container {
   width: 1200px;
@@ -325,6 +328,8 @@ img {
 .portfolio-hero-list-item {
   width: 370px;
   height: 404px;
+}
+.portfolio-hero-list-item:hover {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -353,14 +358,14 @@ img {
   margin-right: auto;
   height: 252px;
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .container {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   align-items: flex-start;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer .logo {
   display: block;
